@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CATEGORIES</title>
+    <title>PYTHON</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body bgcolor="f1f1f1" >
@@ -22,9 +22,9 @@
 
         <tr>
             <td>
-                <div class="topnav">
+				<div class="topnav">
                     <a href="https://leejuseoki.github.io/21918021/">HOME</a>
-                    <a href="https://leejuseoki.github.io/21918021/CATEGORIES.html">CATEGORIES</a>
+                    <a href="https://leejuseoki.github.io/21918021/categories.html">CATEGORIES</a>
                     <a href="https://leejuseoki.github.io/21918021/profile.html">PROFILE</a>
                 </div>
             </td>
@@ -53,34 +53,77 @@
                         </div>
                     </td>
                     <td  class="column middle">
-                        <table width="100%" cellspacing="0" cellpadding="0">
-                            <tr>
-                                <td>
-                                    <div>
-                                        <div class="card" style="height:550px">
-                                            <div style="margin-left:100px;">
-                                                <h1>CATEGORIES</h1>
-                                                <h3><a href="https://leejuseoki.github.io/21918021/python.html" style="color: rgb(0, 102, 255);">1. PYTHON</a></h3>
-                                                <h3><a href="https://leejuseoki.github.io/21918021/html.html" style="color: rgb(90, 90, 90);">2. HTML</a></h3>
-                                                <h3><a href="https://leejuseoki.github.io/21918021/css.html" style="color: rgb(74, 160, 4);">3. CSS</a></h3>
-                                                <h3>4. C언어 (작성중...)</h3>
-                                                <h3>5. 네트워크 (작성중...)</h3>
-                                                <h3>6. 해킹 (작성중...)</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        <div class="card" style="height:550px">
-                                            <div style="margin-right:100px; margin-top:20px; text-align:right">
-                                                <img src="./img/chart.png">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
+                        <div>
+                            <div class="card">
+                                <h1 align="center">PYTHON</h1>
+                                <h5 align="center">Posted 2022년 12월 15일 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ By Juseok LEE</h5>
+                                <hr>
+                                <br>
+                                <br>
+                                <a><center><img src="./img/python1.png" width="20%"></center></a>
+                                <h2>1. PYTHON이란</h2>
+                                <p>파이썬은 1991년 네덜란드계 소프트웨어 엔지니어인 귀도 반 로섬이 발표한 고급 프로그래밍 언어로, 플랫폼에 독립적이며 인터프리터식, 객체지향적, 동적 타이핑 대화형 언어이다.
+                                </p>
+                                <h2>2.특징</h2>
+                                <p>많은 프로그래밍 언어들은 구문이 끝날 때 ;(세미콜론)을 붙여야 합니다. 하지만 파이썬은 세미콜론을 붙이지 않습니다.<br>
+                                    불은 True, False로 표현합니다. 특히 비교 연산자, 논리 연산자의 판단 결과로 True, False를 사용합니다.<br>
+                                    문자열은 ' '(작은따옴표) 또는 " "(큰따옴표)로 묶어서 표현합니다.<br>
+                                    여러 줄로 된 문자열은 '''(작은따옴표 3개)로 시작해서 '''로 닫거나 """(큰따옴표 3개)로 시작해서 """로 닫아서 표현합니다.<br>
+                                    
+                                </p>
+                                <h2>3. Hello, world! 출력</h2>
+
+                                <details>
+                                    <summary style="color: blue;">풀이보기(클릭)</summary>
+                                    <pre style="text-align: left;">
+                                    
+~~~python
+>>> print('Hello, Python')
+    Hello, Python
+~~~
+                                    </pre>
+                                    </details>
+                                    <h2>4. 등산 시간 계산</h2>
+
+                                <details>
+                                    <summary style="color: blue;">풀이보기(클릭)</summary>
+                                    <pre style="text-align: left;">
+                                    
+~~~python
+import math
+
+a = 10
+b = math.sqrt(3**2 + 4**2)
+c = math.sqrt(3**2 + 4**2)
+d = 8
+
+speedNormal = int(input("평지의 속도 : "))
+speedUp = int(input("오르막의 속도 : "))
+speedDown = int(input("내리막의 속도 : "))
+
+timeA = int(round(a / speedNormal,2) * 60)
+timeB = int(round(b / speedUp,2) * 60)
+timeC = int(round(c / speedDown,2) * 60)
+timeD = int(round(d / speedNormal,2) * 60)
+
+
+print("A구간은",timeA,"분")
+print("B구간은",timeB,"분")
+print("C구간은",timeC,"분")
+print("D구간은",timeD,"분")
+
+total = timeA + timeB + timeC + timeD
+
+hour = total // 60
+minu = total - hour* 60
+
+print("총",hour,"시간",minu,"분이 소요됩니다.")
+~~~
+                                    </pre>
+                                    </details>
+                                    
+                            </div>
+                        </div>
                     </td>
                     <td  class="column side">
                         <div class="card">
@@ -106,13 +149,13 @@
                 </tr>
             </table>
         </tr>
+        <tr>
+            <td>
+                <div  class="footer">
+                    <p>© 2022 Juseok LEE.</p>
+                </div>
+            </td>
+        </tr>
     </table>
-    <tr>
-        <td>
-            <div  class="footer">
-                <p>© 2022 Juseok LEE.</p>
-            </div>
-        </td>
-    </tr>
 </body>
 </html>
